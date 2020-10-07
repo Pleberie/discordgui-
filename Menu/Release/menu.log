@@ -1,0 +1,9 @@
+﻿  main.cpp
+C:\Users\Tyler\OneDrive\Desktop\development\menu creator\Menu\main.cpp(370,135): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Tyler\OneDrive\Desktop\development\menu creator\Menu\main.cpp(341,8): warning C4101: 'agree': unreferenced local variable
+  Generating code
+  1 of 839 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    8 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  menu.vcxproj -> C:\Users\Tyler\OneDrive\Desktop\development\menu creator\Menu\Release\Menu Creator.exe

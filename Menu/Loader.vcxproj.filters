@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{a71efda1-3623-41ae-a9ff-4123fcf6b463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="menu shitttt">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="menu shitttt\bytes">
+      <UniqueIdentifier>{396df56b-1895-4fd3-a307-f7d45be08c69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="menu shitttt\Helper">
+      <UniqueIdentifier>{9ae66466-51ef-428a-9f3d-c5d9b46fe843}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>menu shitttt</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_dx9.cpp">
+      <Filter>menu shitttt</Filter>
+    </ClCompile>
+    <ClCompile Include="tool.cpp">
+      <Filter>menu shitttt</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>menu shitttt</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\stb_rect_pack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\stb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\stb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_dx9.h">
+      <Filter>menu shitttt</Filter>
+    </ClInclude>
+    <ClInclude Include="background.hpp">
+      <Filter>menu shitttt\bytes</Filter>
+    </ClInclude>
+    <ClInclude Include="font.hpp">
+      <Filter>menu shitttt\bytes</Filter>
+    </ClInclude>
+    <ClInclude Include="brand.hpp">
+      <Filter>menu shitttt\bytes</Filter>
+    </ClInclude>
+    <ClInclude Include="warface_logo.hpp">
+      <Filter>menu shitttt\bytes</Filter>
+    </ClInclude>
+    <ClInclude Include="csgo_logo.hpp">
+      <Filter>menu shitttt\bytes</Filter>
+    </ClInclude>
+    <ClInclude Include="tool.h">
+      <Filter>menu shitttt</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>menu shitttt</Filter>
+    </ClInclude>
+    <ClInclude Include="helper.h">
+      <Filter>menu shitttt\Helper</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
