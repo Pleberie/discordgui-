@@ -408,7 +408,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 				ImGui::Dummy(ImVec2(40, 0));
 				ImGui::SameLine();
 
-				ImGui::BeginChild("##IHATENIGGERS1337_69"); {
+				ImGui::BeginChild("##Tabs"); {
 					switch (tab) {
 					case 0:
 						imageRender = true;
@@ -416,34 +416,34 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 						//i tink dis works
 						break;
 					case 1:
-						ImGui::Text("xerus.vip");
+						ImGui::Text("Test");
 						imageRender = true;
 						ImGui::Checkbox("Box", &box_esp);
 						break;
 					case 2:
-						ImGui::Text("xerus.vip 2");
+						ImGui::Text("Test 2");
 						imageRender = false;
-						// tabs::antiaim::main()
+						
 						break;
 					case 3:
-						ImGui::Text("xerus.vip 3");
+						ImGui::Text("Test 3");
 						imageRender = false;
-						// tabs::visuals::main();
+						
 						break;
 					case 4:
-						ImGui::Text("xerus.vip 4");
+						ImGui::Text("Test 4");
 						imageRender = false;
-						// tabs::skins::main();
+						
 						break;
 					case 5:
-						ImGui::Text("xerus.vip 5");
+						ImGui::Text("Test 5");
 						imageRender = false;
-						// tabs::misc::main();
+						
 						break;
 					default:
-						ImGui::Text("xerus.vip 6");
+						ImGui::Text("Test 6");
 						imageRender = false;
-						// tabs::home::main();
+						
 						break;
 					}
 					ImGui::EndChild();
