@@ -359,6 +359,8 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 		static bool whiteBG = false;
 		static int tab = 0;
 		static bool box_esp = false;
+		static std::string tabs[] = { "general", "music", "chat", "scripting", "configs" };
+
 
 		ImGui::Begin("", &visible_state, next_window ? dwFlag : dwFlag1);
 		{
@@ -382,24 +384,16 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 
 				ImGui::SetCursorPosY(100);
 
-				if (ImGui::BeginChild("##MainTabs", ImVec2((250 + style.WindowPadding.x * 2) + style.WindowPadding.x * 2, 300 - style.WindowPadding.y * 2), true)) {
+				if (ImGui::BeginChild("##MainTabs", ImVec2((250 + style.WindowPadding.x * 2) + style.WindowPadding.x * 2, 300 - style.WindowPadding.y * 2), true, ImGuiWindowFlags_NoScrollbar)) {
 					ImGui::PushFont(tabFont);
 
-					if (ImGui::Button("general", ImVec2{ (235 + style.WindowPadding.x * 2), 35 + style.WindowPadding.x / 2 })) {
-						tab = 1;
+					for (int i = 0; i < sizeof(tabs); i++)
+					{
+						if (ImGui::Button(tabs[i].c_str(), ImVec2{ (235 + style.WindowPadding.x * 2), 35 + style.WindowPadding.x / 2 })) {
+							tab = i;
+						}
 					}
-					if (ImGui::Button("music", ImVec2{ (235 + style.WindowPadding.x * 2), 35 + style.WindowPadding.x / 2 })) {
-						tab = 2;
-					}
-					if (ImGui::Button("chat", ImVec2{ (235 + style.WindowPadding.x * 2), 35 + style.WindowPadding.x / 2 })) {
-						tab = 3;
-					}
-					if (ImGui::Button("scripting", ImVec2{ (235 + style.WindowPadding.x * 2), 35 + style.WindowPadding.x / 2 })) {
-						tab = 4;
-					}
-					if (ImGui::Button("configs", ImVec2{ (235 + style.WindowPadding.x * 2), 35 + style.WindowPadding.x / 2 })) {
-						tab = 5;
-					}
+
 
 					ImGui::PopFont();
 				} ImGui::EndChild();
