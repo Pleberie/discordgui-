@@ -314,13 +314,10 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 	ImFont* tabFont = io.Fonts->AddFontFromMemoryTTF(tabs, sizeof(tabs), 18);
 
 	if (background_IMAGE == nullptr)
-		D3DXCreateTextureFromFileInMemoryEx(g_pd3dDevice, &background, sizeof(background), 1000, 1000, D3DX_DEFAULT, D3DUSAGE_DYNAMIC, D3DFMT_UNKNOWN, D3DPOOL_DEFAULT, D3DX_DEFAULT, D3DX_DEFAULT, 0, NULL, NULL, &background_IMAGE);
+		//D3DXCreateTextureFromFileInMemoryEx(g_pd3dDevice, &background, sizeof(background), 1000, 1000, D3DX_DEFAULT, D3DUSAGE_DYNAMIC, D3DFMT_UNKNOWN, D3DPOOL_DEFAULT, D3DX_DEFAULT, D3DX_DEFAULT, 0, NULL, NULL, &background_IMAGE);
 
-	HW_PROFILE_INFO hwProfileInfo;
+		HW_PROFILE_INFO hwProfileInfo;
 
-	string hwid;
-	if (GetCurrentHwProfile(&hwProfileInfo))
-		hwid = hwProfileInfo.szHwProfileGuid;
 
 	// Main loop
 	MSG msg;
@@ -423,27 +420,27 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 					case 2:
 						ImGui::Text("Test 2");
 						imageRender = false;
-						
+
 						break;
 					case 3:
 						ImGui::Text("Test 3");
 						imageRender = false;
-						
+
 						break;
 					case 4:
 						ImGui::Text("Test 4");
 						imageRender = false;
-						
+
 						break;
 					case 5:
 						ImGui::Text("Test 5");
 						imageRender = false;
-						
+
 						break;
 					default:
 						ImGui::Text("Test 6");
 						imageRender = false;
-						
+
 						break;
 					}
 					ImGui::EndChild();
